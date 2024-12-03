@@ -1,4 +1,4 @@
-# sample_messaging_api
+# Sample Messaging API
 Developer Experience Assessment for sinch interview
 
 ## How to use?
