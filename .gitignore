@@ -3,3 +3,5 @@ __pycache__/
 
 # Ignore build directory
 build/
+
+myenv/
