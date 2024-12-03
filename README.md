@@ -22,7 +22,7 @@ You can install the sdk using this command after moving to SDK directory
 pip install .
 ```
 
-Also you should install flask in order to use the webhooks server
+Additionally, install flask to enable the webhooks server:
 
 ```
 pip install flask
@@ -63,7 +63,7 @@ cd webhook-server/
 python3 app.py
 ```
 
-We get the conacts to get the id from it:
+Next, we get the conacts to get the id from it:
 
 ```
 python3 -c "from sample_messaging.api.contacts import ContactsClient; print(ContactsClient().get_contacts())"
@@ -74,7 +74,8 @@ Choose an id and use it to create a new message:
 python3 -c "from sample_messaging.api.messages import MessagesClient; print(MessagesClient().create_message('test@gmail.com', 'Test content', {id}))"
 ```
 
-You will receive in our webhooks server 200 ok response indicating that everything is working fine
+You will receive in our webhooks server 200 ok response confirming that everything is working correctly.  
+Example output:
 ```
 Valid signature...
 172.20.0.4 - - [03/Dec/2024 11:36:25] "POST /webhooks HTTP/1.1" 200 -
