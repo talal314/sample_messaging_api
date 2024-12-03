@@ -6,7 +6,7 @@ setup(
     description="SDK for the assessment sample messaging API",
     author="Talal AWija",
     author_email="talal.awija@gmail.com",
-    url="",
+    url="https://github.com/talal314/sample_messaging_api",
     packages=find_packages(),
     install_requires=[
         "requests>=2.26.0",
