@@ -36,13 +36,13 @@ python3 -c "import sample_messaging; print('Sample Messaging imported successful
 
 ### Run Python commands to communicate with the API
 
-Let's test the API related with the contacts, for example create a new contact. In order to do it, we need to run this command:
+Let's test the API related with the contacts, for example creating a new contact. In order to do it, we need to run this command:
 
 ```
 python3 -c "from sample_messaging.api.contacts import ContactsClient; print(ContactsClient().create_contact(name='Test', phone='+3411111111'))"
 ```
 
-We will get a response showing the id, name and the phone number of the contact.
+We will get a response showing the contact's id, name and the phone number.
 
 In the same way, we can test all the other methods related to the contacts and messages.
 
@@ -57,7 +57,7 @@ python3 -m unittest discover -v
 
 In order to recieve a webhooks, first of all we need to change the webhooks URL to this one 'http://172.17.0.1:3010/webhooks', to enable the connection between the docker container and the host.
 
-After that we run our flask server using these commands:
+After that, we run our flask server using these commands:
 ```
 cd webhook-server/
 python3 app.py
